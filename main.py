@@ -74,8 +74,8 @@ def ping():
 
 # Level 2: Echo
 @app.post("/echo")
-def echo(body: EchoBody):
-    return body.model_dump()
+async def echo(request: Request):
+    return await request.json()
 
 
 # Level 3: Create and read books
