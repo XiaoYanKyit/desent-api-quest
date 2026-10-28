@@ -70,8 +70,7 @@ def validate_book(data):
 # Level 1: Ping
 @app.get("/ping")
 def ping():
-    return {"message": "pong"}
-
+    return {"success": True}
 
 # Level 2: Echo
 @app.post("/echo")
